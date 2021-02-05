@@ -77,6 +77,18 @@ Check more settings configurations in the [documentation](https://code.visualstu
 
 Find more extensions in the [VSCode Marketplace](https://marketplace.visualstudio.com/VSCode)
 
+### Dockerfile
+
+Within the file `.devcontainer/Dockerfile` it is possible to add more tooling and dependencies built in to the docker image that will serve as your dev container.
+
+For example, if we wanted to add `wget` command into our dev container, we could achieve this by simply adding it at the end of the `Dockerfile`:
+
+```
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get install -y wget
+```
+
+---
 
 ## Questions
 More information or questions, feel free to open an issue or reach out:
