@@ -47,6 +47,38 @@ Hello Sarah
 Hello Kai
 ```
 
-More information or questions, feel free to reach out:
+## Extend functionalities in your dev container
+
+### VSCode Configuration
+
+Within the file `.devcontainer/devcontainer.json` you are able to extend:
+- Settings
+```
+// Set *default* container specific settings.json values on container create.
+"settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "deno.enable": true,
+    "deno.unstable": true,
+    "deno.lint": true
+},
+```
+Check more settings configurations in the [documentation](https://code.visualstudio.com/docs/getstarted/settings).
+
+- Extensions
+```
+// Add the IDs of extensions you want installed when the container is created.
+"extensions": [
+    "ms-azuretools.vscode-docker",
+    "denoland.vscode-deno",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "esbenp.prettier-vscode"
+],
+```
+
+Find more extensions in the [VSCode Marketplace](https://marketplace.visualstudio.com/VSCode)
+
+
+## Questions
+More information or questions, feel free to open an issue or reach out:
 
 [Twitter](https://twitter.com/schmittfelipe) | [Github](https://github.com/fsschmitt) | [Website](https://felipeschmitt.com)
