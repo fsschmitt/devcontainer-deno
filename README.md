@@ -1,4 +1,4 @@
-# Devcontainer for Deno
+# Dev container for Deno
 
 The goal of this repo is to serve as a base dev container for a Deno application
 
