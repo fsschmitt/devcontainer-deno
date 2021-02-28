@@ -7,6 +7,7 @@ RUN mkdir -p /deno \
     && curl -fsSL https://deno.land/x/install/install.sh -o install-deno.sh \
     && sh install-deno.sh ${DENO_VERSION} \
     && chown -R vscode /deno \
+    && chmod -R 777 /deno \
     && rm install-deno.sh
 
 ENV PATH=${DENO_INSTALL}/bin:${PATH} \
